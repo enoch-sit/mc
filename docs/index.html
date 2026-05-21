@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MC Cue Index</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <p class="eyebrow">Simple access gate</p>
+      <h1>MC Cue Index</h1>
+      <p>This passcode screen is for convenience only. It is not secure on a static host.</p>
+      <label class="field-label" for="passcodeInput">Passcode</label>
+      <input id="passcodeInput" class="text-input" type="password" autocomplete="current-password" placeholder="Enter passcode">
+      <button id="unlockButton" type="button">Open App</button>
+      <p class="gate-error" id="gateError"></p>
+      <p class="gate-note">Edit <code>webapp/config.js</code> before deployment.</p>
+    </div>
+  </div>
+
+  <main class="app-shell hidden" id="appShell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Vercel-ready static app</p>
+        <h1 id="appTitle">MC Cue Index</h1>
+        <p class="hero-copy" id="appSubtitle"></p>
+      </div>
+      <div class="hero-actions">
+        <button id="printButton" type="button">Printable Version</button>
+        <button id="collapseButton" class="secondary" type="button">Collapse All</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="toolbar-block timer-block">
+        <span class="toolbar-label">Live schedule indicator</span>
+        <p class="timer-clock" id="timerClock">--:--</p>
+        <p class="timer-current" id="timerCurrent">Loading current event...</p>
+        <p class="timer-next" id="timerNext">Loading next event...</p>
+      </div>
+      <div class="toolbar-block">
+        <span class="toolbar-label">Audio provider</span>
+        <div class="provider-buttons" id="providerButtons"></div>
+      </div>
+      <div class="toolbar-block">
+        <span class="toolbar-label">View</span>
+        <div class="filter-buttons">
+          <button class="secondary active-filter" data-filter="all" type="button">All</button>
+          <button class="secondary" data-filter="spoken" type="button">Spoken</button>
+          <button class="secondary" data-filter="logistics" type="button">Logistics</button>
+          <button class="secondary" data-filter="practice" type="button">Practice</button>
+        </div>
+      </div>
+      <div class="toolbar-block status-block">
+        <span class="toolbar-label">Status</span>
+        <p class="status-text" id="statusText">Loading cue index...</p>
+      </div>
+    </section>
+
+    <nav class="phase-index panel" id="phaseIndex"></nav>
+    <section class="phase-list" id="phaseList"></section>
+  </main>
+
+  <script src="./config.js"></script>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

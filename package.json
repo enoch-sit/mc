@@ -11,7 +11,8 @@
     "teach-tts": "node generate_teacher_tts.mjs",
     "word-align": "python generate_word_timestamps.py",
     "build:cues": "node build_mc_cue_index.mjs",
-    "build:webapp": "node build_mc_cue_index.mjs"
+    "build:docs": "node build_docs.mjs",
+    "build:webapp": "node build_mc_cue_index.mjs && node build_docs.mjs"
   },
   "dependencies": {
     "kokoro-js": "latest"
