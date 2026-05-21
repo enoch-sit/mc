@@ -313,6 +313,42 @@ button.active-filter {
   font-size: 1rem;
 }
 
+.sentence-pager {
+  display: grid;
+  gap: 12px;
+}
+
+.sentence-pager-header,
+.sentence-pager-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sentence-pager-title,
+.sentence-pager-progress {
+  margin: 0;
+}
+
+.sentence-pager-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sentence-pager-progress {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.sentence-pager-viewport {
+  display: grid;
+  gap: 12px;
+}
+
 .logistics-copy {
   margin: 0;
 }
@@ -346,6 +382,18 @@ button.active-filter {
   .gate-card {
     border-radius: 20px;
     padding: 16px;
+  }
+
+  .sentence-pager-controls button {
+    flex: 1 1 140px;
+  }
+
+  .line-card {
+    padding: 16px;
+  }
+
+  .line-text {
+    font-size: 1.08rem;
   }
 }
 

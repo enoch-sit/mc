@@ -51,6 +51,8 @@ let collapseAll = false;
 let activeFilter = "all";
 let timerHandle = 0;
 
+const PHONE_SENTENCE_PAGE_SIZE = 3;
+
 function setStatus(message) {
   statusText.textContent = message;
 }
@@ -315,6 +317,76 @@ function renderLogistics(duty) {
   return card;
 }
 
+function isPhoneLayout() {
+  return window.matchMedia("(max-width: 640px)").matches;
+}
+
+function renderSentencePager(lines, phaseTitle) {
+  const pager = document.createElement("div");
+  pager.className = "sentence-pager";
+
+  const header = document.createElement("div");
+  header.className = "sentence-pager-header";
+
+  const title = document.createElement("p");
+  title.className = "sentence-pager-title";
+  title.textContent = "Phone cue cards";
+
+  const progress = document.createElement("p");
+  progress.className = "sentence-pager-progress";
+
+  header.append(title, progress);
+
+  const viewport = document.createElement("div");
+  viewport.className = "sentence-pager-viewport";
+
+  const controls = document.createElement("div");
+  controls.className = "sentence-pager-controls";
+
+  const previousButton = document.createElement("button");
+  previousButton.type = "button";
+  previousButton.className = "secondary";
+  previousButton.textContent = "Previous 3";
+
+  const nextButton = document.createElement("button");
+  nextButton.type = "button";
+  nextButton.textContent = "Next 3";
+
+  controls.append(previousButton, nextButton);
+
+  let startIndex = 0;
+
+  function updatePager() {
+    const visibleLines = lines.slice(startIndex, startIndex + PHONE_SENTENCE_PAGE_SIZE);
+    viewport.innerHTML = "";
+    visibleLines.forEach((line) => viewport.append(renderLine(line)));
+
+    const endIndex = Math.min(startIndex + PHONE_SENTENCE_PAGE_SIZE, lines.length);
+    progress.textContent = `Showing sentences ${startIndex + 1}-${endIndex} of ${lines.length} for ${phaseTitle}.`;
+    previousButton.disabled = startIndex === 0;
+    nextButton.disabled = endIndex >= lines.length;
+  }
+
+  previousButton.addEventListener("click", () => {
+    startIndex = Math.max(0, startIndex - PHONE_SENTENCE_PAGE_SIZE);
+    updatePager();
+    pager.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  nextButton.addEventListener("click", () => {
+    startIndex = Math.min(
+      Math.max(0, lines.length - PHONE_SENTENCE_PAGE_SIZE),
+      startIndex + PHONE_SENTENCE_PAGE_SIZE
+    );
+    updatePager();
+    pager.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  updatePager();
+  pager.append(header, viewport, controls);
+  return pager;
+}
+
 function renderPhase(phase) {
   const section = document.createElement("section");
   section.className = "phase-card";
@@ -386,7 +458,11 @@ function renderPhase(phase) {
   const lineList = document.createElement("div");
   lineList.className = "line-list";
   if (phase.lines.length > 0) {
-    phase.lines.forEach((line) => lineList.append(renderLine(line)));
+    if (isPhoneLayout()) {
+      lineList.append(renderSentencePager(phase.lines, phase.title));
+    } else {
+      phase.lines.forEach((line) => lineList.append(renderLine(line)));
+    }
   } else {
     const placeholder = document.createElement("article");
     placeholder.className = "line-card";
