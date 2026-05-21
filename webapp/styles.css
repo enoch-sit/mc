@@ -1,0 +1,387 @@
+:root {
+  color-scheme: light;
+  --bg: #f4efe6;
+  --panel: rgba(255, 251, 245, 0.92);
+  --card: #fffdf8;
+  --text: #1d2935;
+  --muted: #5c6875;
+  --accent: #9a3f2a;
+  --accent-soft: #f4ddd3;
+  --accent-deep: #233f50;
+  --border: #e6d7c3;
+  --shadow: 0 18px 42px rgba(54, 34, 19, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top left, rgba(180, 126, 72, 0.16), transparent 30%),
+    linear-gradient(180deg, #faf6ef 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease, background 120ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button.secondary {
+  background: var(--accent-soft);
+  color: #5e2a1f;
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--accent-deep);
+  border: 1px solid rgba(35, 63, 80, 0.2);
+}
+
+button.active-provider,
+button.active-filter {
+  background: var(--accent-deep);
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.gate {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.gate-card,
+.panel,
+.phase-card,
+.line-card,
+.logistics-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.gate-card {
+  width: min(480px, 100%);
+  padding: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.field-label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.text-input {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.gate-error {
+  min-height: 1.3em;
+  color: #8b2d22;
+}
+
+.gate-note,
+.status-text,
+.meta-text,
+.line-meta,
+.note-list,
+.logistics-copy,
+.footer-note,
+.timer-next {
+  color: var(--muted);
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 18px 40px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: linear-gradient(140deg, rgba(154, 63, 42, 0.95), rgba(62, 36, 31, 0.94));
+  color: #fff8f1;
+  padding: 28px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.hero-copy {
+  max-width: 720px;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.hero-actions,
+.provider-buttons,
+.filter-buttons,
+.line-actions,
+.phase-actions,
+.tag-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbar {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.toolbar-block,
+.phase-index {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.toolbar-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.timer-block {
+  background: linear-gradient(160deg, rgba(35, 63, 80, 0.92), rgba(24, 39, 51, 0.95));
+  color: #eef6fb;
+}
+
+.timer-block .toolbar-label,
+.timer-block .timer-next {
+  color: rgba(238, 246, 251, 0.8);
+}
+
+.timer-clock {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1;
+}
+
+.timer-current {
+  margin: 10px 0 6px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.timer-next {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.phase-index {
+  margin-top: 18px;
+}
+
+.phase-index-title {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.phase-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.phase-card {
+  padding: 20px;
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.phase-title {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+}
+
+.phase-summary,
+.logistics-copy,
+.line-text,
+.note-list li {
+  line-height: 1.55;
+}
+
+.phase-summary {
+  margin: 0 0 10px;
+}
+
+.tag {
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #efe5d8;
+  color: #6a4d34;
+  font-size: 0.9rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1.5fr 1fr;
+  margin-top: 18px;
+}
+
+.line-list,
+.logistics-list {
+  display: grid;
+  gap: 12px;
+}
+
+.line-card,
+.logistics-card {
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.line-head,
+.logistics-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.line-id,
+.logistics-id {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.83rem;
+  color: var(--muted);
+}
+
+.line-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.logistics-copy {
+  margin: 0;
+}
+
+.note-list,
+.logistics-extra {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.footer-note {
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 16px 12px 32px;
+  }
+
+  .hero,
+  .phase-card,
+  .panel,
+  .toolbar-block,
+  .phase-index,
+  .gate-card {
+    border-radius: 20px;
+    padding: 16px;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .gate,
+  .toolbar,
+  .phase-index,
+  .hero-actions,
+  .provider-buttons,
+  .filter-buttons,
+  .line-actions,
+  .phase-actions,
+  .footer-note {
+    display: none !important;
+  }
+
+  .app-shell {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero,
+  .phase-card,
+  .line-card,
+  .logistics-card {
+    box-shadow: none;
+    border-color: #d8d8d8;
+    background: #fff;
+  }
+
+  .phase-card {
+    break-inside: avoid;
+    margin-bottom: 14px;
+  }
+}

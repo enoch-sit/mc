@@ -1,0 +1,62 @@
+# One spoken sentence per line for Kokoro practice audio.
+# Format: ID|Spoken text
+
+001|Good morning.
+002|Dr. Anthony Ng, trustee of the Wing Foundation, and advisory board member of the Centre for Medical Ethics and Law of the University of Hong Kong.
+003|Ms. Glenda Yu, C E O of the Wing Foundation.
+004|Distinguished guests, ladies and gentlemen.
+005|Welcome to the International Symposium on Medically Assisted Dying: Global Trends and Asian Perspectives, organized by the Centre for Medical Ethics and Law of the University of Hong Kong.
+006|The acronym for the Centre for Medical Ethics and Law is C, M, E, L.
+007|So we also call the centre see-mel.
+008|C-mel is a joint centre that focuses on health law and health ethics.
+009|It is a centre established by two faculties: the L, K, S Faculty of Medicine, and the Faculty of Law.
+010|Thank you for joining us today.
+011|May I invite Professor Gilberto Leung, co-director of the Centre for Medical Ethics and Law, to give a welcome speech and introduction.
+012|Professor Leung, please.
+013|The discussion has been very insightful.
+014|Thank you so much.
+015|Professor Gilberto Leung, please stay behind and present souvenirs to the presenters of session two, one by one.
+016|Professor Ruiping Fan, please come to the stage.
+017|Professor Ruiping Fan, please stay behind for a group photo to be taken later on.
+018|May I invite Professor Ellen Y. Zhang to the stage?
+019|Professor Ellen Y. Zhang, please stay behind for a group photo to be taken later on.
+020|Professor Jue Wang, please come to the stage.
+021|Professor Gilberto Leung and Professor Jue Wang, please stay behind for a group photo to be taken later on.
+022|May I invite Professor Eric Ip to present souvenirs to presenters of session one, one by one?
+023|Professor Mark J. Cherry, please come to the stage.
+024|Professor Mark J. Cherry, please stay behind for a group photo to be taken later on.
+025|Dr. Simon Walker, please come to the stage.
+026|Dr. Simon Walker, please stay behind for a group photo to be taken later on.
+027|Professor Ana Iltis, please come to the stage.
+028|Professor Ana Iltis, please stay behind.
+029|To the photographer: please take a group photo for everyone on the stage.
+030|Thank you very much.
+031|Please return to your seats.
+032|This is the end of session two.
+033|It is time for lunch.
+034|We have arranged lunch for the speakers and chairs at a vegetarian restaurant called Bijas on the ground floor podium.
+035|Our staff member, Serene, who is holding the conference poster, will accompany the speakers to the restaurant.
+036|Session three will start at two p.m. after lunch.
+037|Thank you, everyone.
+038|Thank you so much for the enlightening discussion.
+039|May I invite Professor Carl Hildebrand and Professor Julie Chen, director of the Medical Ethics and Humanities Unit of the University of Hong Kong, one of the supporting organizations of this symposium, to jointly present a souvenir to the presenters of sessions three and four, one by one.
+040|May I invite Professor Emmanuel Cheung to come to the stage?
+041|Professor Emmanuel Cheung, please stay behind for a group photo to be taken later on.
+042|May I invite Dr. Sanwar Siraj to come to the stage?
+043|Dr. Sanwar Siraj, please stay behind for a group photo to be taken later on.
+044|May I invite Professor Chris Gastmans to come to the stage?
+045|Professor Chris Gastmans, please stay behind for a group photo to be taken later on.
+046|Professor Ben White, please come to the stage.
+047|Professor Ben White, Professor Gilberto Leung, and Professor Julie Chen, please stay behind for a group photo to be taken later on.
+048|To the photographer: please take a group photo for everyone on the stage.
+049|Please may I invite the speakers of the sessions in the morning, Professor Gilberto Leung, Professor Eric Ip, and Professor Carl Hildebrand, to come to the stage for a group photo of all speakers and chairs?
+050|Thank you very much.
+051|Please return to your seats.
+052|This is the end of the symposium.
+053|It is time for dinner.
+054|Our staff member, Serene, who is holding the conference poster, will accompany the speakers to the restaurant, which is in K. K. Leung Building at the University of Hong Kong.
+055|Thank you, everyone.
+056|Nine a.m. to nine fifteen a.m.
+057|Nine oh five a.m.
+058|Twelve twenty-five p.m.
+059|Two p.m.

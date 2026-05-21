@@ -1,0 +1,487 @@
+{
+  "source_file": "2026 Symposium List (version 3).xlsx",
+  "sheet_names": [
+    "Sheet1"
+  ],
+  "sheets": [
+    {
+      "title": "Sheet1",
+      "max_row": 60,
+      "max_column": 5,
+      "non_empty_row_count": 43,
+      "image_count": 1,
+      "images": [
+        {
+          "file": "images\\Sheet1_image_1.png",
+          "width": 1651,
+          "height": 1422,
+          "format": "png",
+          "anchor": {
+            "row": 3,
+            "column": 5,
+            "cell": "E3"
+          }
+        }
+      ],
+      "rows": [
+        [
+          "International Symposium: Medically Assisted Dying: Global Trends and Asian Perspectives",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "S= Serene (seat no. 28)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "J =  Jane (at reception desk)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Y= Yan (seat no. 79? 88?)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SI = Dr Sanwar Siraj (seat no. 10)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "EI = Prof Eric C. Ip (seat no. 29/30/31)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GL = Prof Gilberto Leung (seat no. 29/30/31)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "CarlH = Prof Carl Hildebrand (seat no. 29/30/31)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ACR = Academic Conference Room, 11/F, Cheng Yu Tung Tower, Centennial Campus, HKU",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Keep the doors locked",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "https://cmel.hku.hk/events/international-symposium-on-medically-assisted-dying-global-trends-and-asian-perspectives/",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Duties of Serene, Jane and (helper) Yan",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "No.",
+          "Duty ",
+          "Who?",
+          "Materials needed",
+          null
+        ],
+        [
+          1,
+          "a. Sharing of Y's phone no. and email address with S? \nb. Sharing Zoom link with Y\nc. Inform Y of the location of the slides and recordings",
+          "J",
+          null,
+          null
+        ],
+        [
+          2,
+          "Meet speaker at 8:00 am on 1/F of Hotel Jen and walk with them to MTR Exit B2 and then through the station to MTR Exit C2 to ACR and Whatsapp J about the siutation",
+          "Y",
+          "1. List of non-local speakers\n2. Programme booklet, which contains photos\n3. a card to be held at the Hotel?",
+          "Emergency plan: S will take care of the venue and J will go to the hotel too"
+        ],
+        [
+          3,
+          "IT set up (including the display of the background slide) and show the speakers how to use the equipment before the session",
+          "S",
+          "uploaded to the desktop: \n1. MP4 of Prof Chen's video",
+          null
+        ],
+        [
+          4,
+          "Put up a poster and seating plan and programme on the wall at the entrance",
+          null,
+          "1. poster \n2. seating plan x2 \n3. programme x 2\n4. glu-tack/ dispensary tape",
+          null
+        ],
+        [
+          5,
+          "Stick a paper \"no.\" notice for each seat",
+          "Y/J",
+          "1. number notice from 1 to [x] \n2. dispensary tape",
+          null
+        ],
+        [
+          6,
+          "at the beginning, ensure that the event is being recorded",
+          "S",
+          null,
+          null
+        ],
+        [
+          7,
+          "ensure that the event is being recorded on Zoom and that slides and video recordings are shown properly for Zoom participants throughout the event",
+          "S",
+          "1. laptop\n2. earphones",
+          null
+        ],
+        [
+          8,
+          "watch the symposium on phone as a member of the audience to ensure that slides and video recordings are shown properly for Zoom participants throughout the event ",
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          "ensure that both onsite camcorders are on by watching on Zoom",
+          "S",
+          null,
+          null
+        ],
+        [
+          10,
+          "Put room temp water and snacks on the table at the outset",
+          "S/J",
+          "1. Paper notice for water?",
+          null
+        ],
+        [
+          11,
+          "Signing in and giving lanyards and onsite registration",
+          "J",
+          "1. sign-in sheet for registrants;\n2. sign-in sheet for law RPg students;\n3. registration form for onsite participants\n4. lanyards (orange for speakers; green for participants including Julie Chen and WYNG representatives; black for temp registrants; red for suppor team)\n5. laptop for checkinng emails and watching on Zoom\n6. programme booklet to be provided if needed",
+          null
+        ],
+        [
+          12,
+          "Show the participant location of his/her seat (if not busy)",
+          "J & (after arrival at venue) Y",
+          "1. seating plan",
+          null
+        ],
+        [
+          13,
+          "Refill Water for water jugs on head table during break and forfor water jugs on  tables in the lobby during break",
+          null,
+          "1. access to pantry on 9/F (water dispenser inside pandry)",
+          null
+        ],
+        [
+          14,
+          "Time keeper",
+          "S",
+          "1. \"1 minute left\" card and \"Time is u\"p card",
+          null
+        ],
+        [
+          15,
+          "Change slides ",
+          "S/Y",
+          "uploaded to the desktop: \n1. slides;",
+          null
+        ],
+        [
+          16,
+          "Play video recording and click maximise quality",
+          "S/Y",
+          "uploaded to the desktop: \n1. MP4 of Prof Chen's video",
+          null
+        ],
+        [
+          17,
+          "Change name stands at the head table (seat nos. 89-93)",
+          "S/Y",
+          "Name stands for all speakers and chairs and Julie Chen",
+          null
+        ],
+        [
+          18,
+          "In the morning break, (a) pick up 2 boxes of salad wraps and 2 pots of Coffee and 1 pot of tea at Alfafa  and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "Y",
+          "1. receipts\n2. paper notices each showing description of the food or drink",
+          null
+        ],
+        [
+          19,
+          "In the afternoon break, (b) pick up 2 boxes of fruit tarts and 2 pots of Coffee and 1 pot of tea at Alfafa  and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "J",
+          "1. receipts\n2. paper notices each showing description of the food or drink",
+          null
+        ],
+        [
+          20,
+          "hold a \"?\" card, accompany speakers to Bijas, the restaurant for lunch (1:40 pm)",
+          "S",
+          "1.  \"?\" card",
+          null
+        ],
+        [
+          21,
+          "Be at Bijas at 1:40 pm to accompany the speakers back to ACR",
+          "S",
+          null,
+          null
+        ],
+        [
+          22,
+          "hold a \"?\" card, accompany speakers to SCR, the restaurant for dinner ",
+          "S",
+          "1. \"?\" card ",
+          null
+        ],
+        [
+          23,
+          "stay in ACR if any equipment is left there and in case anyone leaves any belonging behind? Main entrance of ACR will not be locked",
+          "J/Y",
+          "1. takeaway lunch ",
+          null
+        ],
+        [
+          24,
+          "Collect lanyards used",
+          "J",
+          "Box for collection of lanyards",
+          null
+        ],
+        [
+          25,
+          "Be the MC, in particular, invite each chair to present a set of metal bookmarks to each speaker at thend of session 1, 2 and 3 and after presentation of Dr Siraj",
+          "SI",
+          null,
+          null
+        ],
+        [
+          26,
+          "Give souvenir to chair for presentation to each of the eleven speakers",
+          "Y",
+          "1. 11 sets of metal bookmarks plus one spare set?",
+          null
+        ],
+        [
+          27,
+          "Taking 1 photo for presentation of each souvenir and group photos for each session and for the whole conference and taking photos throughout the symposium",
+          "S",
+          "1. phone for taking photos",
+          null
+        ],
+        [
+          28,
+          "Ensure that the two glass doors and (after ensuring that no one is in the washroom) the wood door are locked",
+          "J",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Materials needed",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "No. ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "preview": [
+        [
+          "International Symposium: Medically Assisted Dying: Global Trends and Asian Perspectives",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "S= Serene (seat no. 28)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "J =  Jane (at reception desk)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Y= Yan (seat no. 79? 88?)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SI = Dr Sanwar Siraj (seat no. 10)",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

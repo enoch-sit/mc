@@ -1,0 +1,19 @@
+{
+  "name": "satwork-mc-practice-tts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "mc-tts:dry-run": "node generate_mc_practice_audio.mjs --dry-run",
+    "mc-tts": "node generate_mc_practice_audio.mjs",
+    "mc-parts": "node build_mc_part_audio.mjs",
+    "test:openrouter-tts": "node test_openrouter_tts.mjs",
+    "test:grok-tts": "node test_grok_tts.mjs",
+    "teach-tts": "node generate_teacher_tts.mjs",
+    "word-align": "python generate_word_timestamps.py",
+    "build:cues": "node build_mc_cue_index.mjs",
+    "build:webapp": "node build_mc_cue_index.mjs"
+  },
+  "dependencies": {
+    "kokoro-js": "latest"
+  }
+}

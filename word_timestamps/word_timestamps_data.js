@@ -1,0 +1,1 @@
+window.WORD_TIMESTAMPS = window.WORD_TIMESTAMPS || {};

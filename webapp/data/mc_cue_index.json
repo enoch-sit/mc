@@ -1,0 +1,936 @@
+{
+  "generatedAt": "2026-05-21T15:00:35.249Z",
+  "sourceFiles": [
+    "AD-Symposium-Programme-g_extract/programme_schedule.csv",
+    "2026 Symposium List (version 3)_extract/duties_records.csv",
+    "mc_practice_lines.txt",
+    "MCScript.txt"
+  ],
+  "deploymentNotes": {
+    "host": "Vercel static deployment",
+    "passcodeWarning": "Client-side passcode is only a convenience gate. It is not real security."
+  },
+  "schedule": {
+    "timezone": "Asia/Hong_Kong",
+    "eventDate": "2026-05-23",
+    "mode": "time-of-day",
+    "note": "The live indicator uses Hong Kong time-of-day so it still shows what should be happening during rehearsal before symposium day."
+  },
+  "audioProviders": {
+    "local": "../mc_practice_audio",
+    "openrouter": "../teacher_tts_audio/openrouter",
+    "grok": "../teacher_tts_audio/grok"
+  },
+  "phases": [
+    {
+      "id": "pre-event-logistics",
+      "title": "Pre-Event Logistics",
+      "kind": "logistics",
+      "navLabel": "Pre-Event",
+      "timeLabel": "Before 9:00 a.m.",
+      "sessionTitle": "Venue, arrivals, registration, and AV readiness",
+      "trigger": "Before the first spoken welcome line, the room and support flow should already be stable.",
+      "whoOnStage": [
+        "MC ready",
+        "Guests seated",
+        "Support team in position"
+      ],
+      "nextAction": "Begin the opening welcome only after recording, registration, seating, and slides are ready.",
+      "notes": [
+        "The workbook places speaker pickup at 8:00 a.m. from Hotel Jen.",
+        "Recording and Zoom monitoring are support duties, not spoken MC cues."
+      ],
+      "scriptCoverage": "Workbook logistics only",
+      "lineIds": [],
+      "lines": [],
+      "logistics": [
+        {
+          "dutyNo": "1",
+          "assignedTo": "J",
+          "duty": "a. Sharing of Y's phone no. and email address with S? b. Sharing Zoom link with Y c. Inform Y of the location of the slides and recordings",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "2",
+          "assignedTo": "Y",
+          "duty": "Meet speaker at 8:00 am on 1/F of Hotel Jen and walk with them to MTR Exit B2 and then through the station to MTR Exit C2 to ACR and Whatsapp J about the siutation",
+          "materialsNeeded": "1. List of non-local speakers 2. Programme booklet, which contains photos 3. a card to be held at the Hotel?",
+          "notes": "Emergency plan: S will take care of the venue and J will go to the hotel too"
+        },
+        {
+          "dutyNo": "4",
+          "assignedTo": "Unassigned",
+          "duty": "Put up a poster and seating plan and programme on the wall at the entrance",
+          "materialsNeeded": "1. poster 2. seating plan x2 3. programme x 2 4. glu-tack/ dispensary tape",
+          "notes": ""
+        },
+        {
+          "dutyNo": "6",
+          "assignedTo": "S",
+          "duty": "at the beginning, ensure that the event is being recorded",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "7",
+          "assignedTo": "S",
+          "duty": "ensure that the event is being recorded on Zoom and that slides and video recordings are shown properly for Zoom participants throughout the event",
+          "materialsNeeded": "1. laptop 2. earphones",
+          "notes": ""
+        },
+        {
+          "dutyNo": "8",
+          "assignedTo": "Unassigned",
+          "duty": "watch the symposium on phone as a member of the audience to ensure that slides and video recordings are shown properly for Zoom participants throughout the event",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "9",
+          "assignedTo": "S",
+          "duty": "ensure that both onsite camcorders are on by watching on Zoom",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "10",
+          "assignedTo": "S/J",
+          "duty": "Put room temp water and snacks on the table at the outset",
+          "materialsNeeded": "1. Paper notice for water?",
+          "notes": ""
+        },
+        {
+          "dutyNo": "11",
+          "assignedTo": "J",
+          "duty": "Signing in and giving lanyards and onsite registration",
+          "materialsNeeded": "1. sign-in sheet for registrants; 2. sign-in sheet for law RPg students; 3. registration form for onsite participants 4. lanyards (orange for speakers; green for participants including Julie Chen and WYNG representatives; black for temp registrants; red for suppor team) 5. laptop for checkinng emails and watching on Zoom 6. programme booklet to be provided if needed",
+          "notes": ""
+        },
+        {
+          "dutyNo": "12",
+          "assignedTo": "J & (after arrival at venue) Y",
+          "duty": "Show the participant location of his/her seat (if not busy)",
+          "materialsNeeded": "1. seating plan",
+          "notes": ""
+        },
+        {
+          "dutyNo": "13",
+          "assignedTo": "Unassigned",
+          "duty": "Refill Water for water jugs on head table during break and forfor water jugs on tables in the lobby during break",
+          "materialsNeeded": "1. access to pantry on 9/F (water dispenser inside pandry)",
+          "notes": ""
+        },
+        {
+          "dutyNo": "14",
+          "assignedTo": "S",
+          "duty": "Time keeper",
+          "materialsNeeded": "1. \"1 minute left\" card and \"Time is u\"p card",
+          "notes": ""
+        },
+        {
+          "dutyNo": "15",
+          "assignedTo": "S/Y",
+          "duty": "Change slides",
+          "materialsNeeded": "uploaded to the desktop: 1. slides;",
+          "notes": ""
+        },
+        {
+          "dutyNo": "17",
+          "assignedTo": "S/Y",
+          "duty": "Change name stands at the head table (seat nos. 89-93)",
+          "materialsNeeded": "Name stands for all speakers and chairs and Julie Chen",
+          "notes": ""
+        },
+        {
+          "dutyNo": "24",
+          "assignedTo": "J",
+          "duty": "Collect lanyards used",
+          "materialsNeeded": "Box for collection of lanyards",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "active": true
+      }
+    },
+    {
+      "id": "opening-welcome",
+      "title": "Opening Welcome",
+      "kind": "spoken",
+      "navLabel": "Opening",
+      "timeLabel": "9:00 – 9:05",
+      "sessionTitle": "Welcome and Introduction",
+      "trigger": "At the start of the symposium, before Professor Gilberto Leung begins the welcome speech and introduction.",
+      "whoOnStage": [
+        "MC",
+        "Dr. Anthony Ng",
+        "Ms. Glenda Yu",
+        "Audience seated"
+      ],
+      "nextAction": "Invite Professor Gilberto Leung to give the welcome speech and introduction.",
+      "notes": [
+        "The original MC script says Professor Eric Ip handles the Session 1 intermission announcement, not the MC.",
+        "[At the end of session 1, Prof Eric Ip will tell the audience that the intermission starts."
+      ],
+      "scriptCoverage": "Covered by practice audio",
+      "lineIds": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012"
+      ],
+      "lines": [
+        {
+          "id": "001",
+          "text": "Good morning.",
+          "hasAudio": true
+        },
+        {
+          "id": "002",
+          "text": "Dr. Anthony Ng, trustee of the Wing Foundation, and advisory board member of the Centre for Medical Ethics and Law of the University of Hong Kong.",
+          "hasAudio": true
+        },
+        {
+          "id": "003",
+          "text": "Ms. Glenda Yu, C E O of the Wing Foundation.",
+          "hasAudio": true
+        },
+        {
+          "id": "004",
+          "text": "Distinguished guests, ladies and gentlemen.",
+          "hasAudio": true
+        },
+        {
+          "id": "005",
+          "text": "Welcome to the International Symposium on Medically Assisted Dying: Global Trends and Asian Perspectives, organized by the Centre for Medical Ethics and Law of the University of Hong Kong.",
+          "hasAudio": true
+        },
+        {
+          "id": "006",
+          "text": "The acronym for the Centre for Medical Ethics and Law is C, M, E, L.",
+          "hasAudio": true
+        },
+        {
+          "id": "007",
+          "text": "So we also call the centre see-mel.",
+          "hasAudio": true
+        },
+        {
+          "id": "008",
+          "text": "C-mel is a joint centre that focuses on health law and health ethics.",
+          "hasAudio": true
+        },
+        {
+          "id": "009",
+          "text": "It is a centre established by two faculties: the L, K, S Faculty of Medicine, and the Faculty of Law.",
+          "hasAudio": true
+        },
+        {
+          "id": "010",
+          "text": "Thank you for joining us today.",
+          "hasAudio": true
+        },
+        {
+          "id": "011",
+          "text": "May I invite Professor Gilberto Leung, co-director of the Centre for Medical Ethics and Law, to give a welcome speech and introduction.",
+          "hasAudio": true
+        },
+        {
+          "id": "012",
+          "text": "Professor Leung, please.",
+          "hasAudio": true
+        }
+      ],
+      "logistics": [
+        {
+          "dutyNo": "1",
+          "assignedTo": "J",
+          "duty": "a. Sharing of Y's phone no. and email address with S? b. Sharing Zoom link with Y c. Inform Y of the location of the slides and recordings",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "6",
+          "assignedTo": "S",
+          "duty": "at the beginning, ensure that the event is being recorded",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "7",
+          "assignedTo": "S",
+          "duty": "ensure that the event is being recorded on Zoom and that slides and video recordings are shown properly for Zoom participants throughout the event",
+          "materialsNeeded": "1. laptop 2. earphones",
+          "notes": ""
+        },
+        {
+          "dutyNo": "8",
+          "assignedTo": "Unassigned",
+          "duty": "watch the symposium on phone as a member of the audience to ensure that slides and video recordings are shown properly for Zoom participants throughout the event",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "11",
+          "assignedTo": "J",
+          "duty": "Signing in and giving lanyards and onsite registration",
+          "materialsNeeded": "1. sign-in sheet for registrants; 2. sign-in sheet for law RPg students; 3. registration form for onsite participants 4. lanyards (orange for speakers; green for participants including Julie Chen and WYNG representatives; black for temp registrants; red for suppor team) 5. laptop for checkinng emails and watching on Zoom 6. programme booklet to be provided if needed",
+          "notes": ""
+        },
+        {
+          "dutyNo": "14",
+          "assignedTo": "S",
+          "duty": "Time keeper",
+          "materialsNeeded": "1. \"1 minute left\" card and \"Time is u\"p card",
+          "notes": ""
+        },
+        {
+          "dutyNo": "15",
+          "assignedTo": "S/Y",
+          "duty": "Change slides",
+          "materialsNeeded": "uploaded to the desktop: 1. slides;",
+          "notes": ""
+        },
+        {
+          "dutyNo": "17",
+          "assignedTo": "S/Y",
+          "duty": "Change name stands at the head table (seat nos. 89-93)",
+          "materialsNeeded": "Name stands for all speakers and chairs and Julie Chen",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "9:00",
+        "endTime": "9:05",
+        "active": true
+      }
+    },
+    {
+      "id": "session-one-handoff",
+      "title": "Session 1 Handoff Note",
+      "kind": "reference",
+      "navLabel": "Session 1 Note",
+      "timeLabel": "10:25 - 10:40",
+      "sessionTitle": "Session 1 intermission",
+      "trigger": "At the end of Session 1, the original script gives the intermission handoff to Professor Eric Ip instead of the MC.",
+      "whoOnStage": [
+        "Professor Eric Ip",
+        "Audience"
+      ],
+      "nextAction": "Treat this as a reference checkpoint, not an MC audio block.",
+      "notes": [
+        "[At the end of session 1, Prof Eric Ip will tell the audience that the intermission starts."
+      ],
+      "scriptCoverage": "Reference only",
+      "lineIds": [],
+      "lines": [],
+      "logistics": [
+        {
+          "dutyNo": "11",
+          "assignedTo": "J",
+          "duty": "Signing in and giving lanyards and onsite registration",
+          "materialsNeeded": "1. sign-in sheet for registrants; 2. sign-in sheet for law RPg students; 3. registration form for onsite participants 4. lanyards (orange for speakers; green for participants including Julie Chen and WYNG representatives; black for temp registrants; red for suppor team) 5. laptop for checkinng emails and watching on Zoom 6. programme booklet to be provided if needed",
+          "notes": ""
+        },
+        {
+          "dutyNo": "18",
+          "assignedTo": "Y",
+          "duty": "In the morning break, (a) pick up 2 boxes of salad wraps and 2 pots of Coffee and 1 pot of tea at Alfafa and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "materialsNeeded": "1. receipts 2. paper notices each showing description of the food or drink",
+          "notes": ""
+        },
+        {
+          "dutyNo": "19",
+          "assignedTo": "J",
+          "duty": "In the afternoon break, (b) pick up 2 boxes of fruit tarts and 2 pots of Coffee and 1 pot of tea at Alfafa and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "materialsNeeded": "1. receipts 2. paper notices each showing description of the food or drink",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "10:25",
+        "endTime": "10:40",
+        "active": true
+      }
+    },
+    {
+      "id": "session-two-close",
+      "title": "Session 2 Close, Souvenirs, and Group Photo",
+      "kind": "spoken",
+      "navLabel": "Session 2 Close",
+      "timeLabel": "12:10 – 12:25",
+      "sessionTitle": "Session 2: Medically Assisted Dying: Theoretical, Empirical, and Cross-Cultural Insights",
+      "trigger": "Say this after the Session 2 discussion finishes and before the lunch transition begins.",
+      "whoOnStage": [
+        "Professor Gilberto Leung",
+        "Professor Eric Ip",
+        "Session 1 and Session 2 presenters as invited"
+      ],
+      "nextAction": "Complete souvenir presentations, group photo, then dismiss the room toward lunch.",
+      "notes": [
+        "The workbook explicitly says the MC should invite each chair to present metal bookmarks.",
+        "Photographer takes one photo per souvenir plus group photos."
+      ],
+      "scriptCoverage": "Covered by practice audio",
+      "lineIds": [
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020",
+        "021",
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031"
+      ],
+      "lines": [
+        {
+          "id": "013",
+          "text": "The discussion has been very insightful.",
+          "hasAudio": true
+        },
+        {
+          "id": "014",
+          "text": "Thank you so much.",
+          "hasAudio": true
+        },
+        {
+          "id": "015",
+          "text": "Professor Gilberto Leung, please stay behind and present souvenirs to the presenters of session two, one by one.",
+          "hasAudio": true
+        },
+        {
+          "id": "016",
+          "text": "Professor Ruiping Fan, please come to the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "017",
+          "text": "Professor Ruiping Fan, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "018",
+          "text": "May I invite Professor Ellen Y. Zhang to the stage?",
+          "hasAudio": true
+        },
+        {
+          "id": "019",
+          "text": "Professor Ellen Y. Zhang, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "020",
+          "text": "Professor Jue Wang, please come to the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "021",
+          "text": "Professor Gilberto Leung and Professor Jue Wang, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "022",
+          "text": "May I invite Professor Eric Ip to present souvenirs to presenters of session one, one by one?",
+          "hasAudio": true
+        },
+        {
+          "id": "023",
+          "text": "Professor Mark J. Cherry, please come to the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "024",
+          "text": "Professor Mark J. Cherry, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "025",
+          "text": "Dr. Simon Walker, please come to the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "026",
+          "text": "Dr. Simon Walker, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "027",
+          "text": "Professor Ana Iltis, please come to the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "028",
+          "text": "Professor Ana Iltis, please stay behind.",
+          "hasAudio": true
+        },
+        {
+          "id": "029",
+          "text": "To the photographer: please take a group photo for everyone on the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "030",
+          "text": "Thank you very much.",
+          "hasAudio": true
+        },
+        {
+          "id": "031",
+          "text": "Please return to your seats.",
+          "hasAudio": true
+        }
+      ],
+      "logistics": [
+        {
+          "dutyNo": "2",
+          "assignedTo": "Y",
+          "duty": "Meet speaker at 8:00 am on 1/F of Hotel Jen and walk with them to MTR Exit B2 and then through the station to MTR Exit C2 to ACR and Whatsapp J about the siutation",
+          "materialsNeeded": "1. List of non-local speakers 2. Programme booklet, which contains photos 3. a card to be held at the Hotel?",
+          "notes": "Emergency plan: S will take care of the venue and J will go to the hotel too"
+        },
+        {
+          "dutyNo": "25",
+          "assignedTo": "SI",
+          "duty": "Be the MC, in particular, invite each chair to present a set of metal bookmarks to each speaker at thend of session 1, 2 and 3 and after presentation of Dr Siraj",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "26",
+          "assignedTo": "Y",
+          "duty": "Give souvenir to chair for presentation to each of the eleven speakers",
+          "materialsNeeded": "1. 11 sets of metal bookmarks plus one spare set?",
+          "notes": ""
+        },
+        {
+          "dutyNo": "27",
+          "assignedTo": "S",
+          "duty": "Taking 1 photo for presentation of each souvenir and group photos for each session and for the whole conference and taking photos throughout the symposium",
+          "materialsNeeded": "1. phone for taking photos",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "12:10",
+        "endTime": "12:25",
+        "active": true
+      }
+    },
+    {
+      "id": "lunch-transition",
+      "title": "Lunch Transition",
+      "kind": "spoken",
+      "navLabel": "Lunch",
+      "timeLabel": "12:25 – 14:00",
+      "sessionTitle": "Lunch (for invitees only)",
+      "trigger": "Immediately after the Session 2 souvenir and group-photo block ends.",
+      "whoOnStage": [
+        "MC",
+        "Speakers and chairs preparing to leave"
+      ],
+      "nextAction": "Direct speakers and chairs to Bijas and remind them Session 3 resumes at 2:00 p.m.",
+      "notes": [
+        "The workbook says Serene holds a card and accompanies speakers to Bijas for lunch.",
+        "There is also a return-to-ACR support duty at 1:40 p.m."
+      ],
+      "scriptCoverage": "Covered by practice audio",
+      "lineIds": [
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037"
+      ],
+      "lines": [
+        {
+          "id": "032",
+          "text": "This is the end of session two.",
+          "hasAudio": true
+        },
+        {
+          "id": "033",
+          "text": "It is time for lunch.",
+          "hasAudio": true
+        },
+        {
+          "id": "034",
+          "text": "We have arranged lunch for the speakers and chairs at a vegetarian restaurant called Bijas on the ground floor podium.",
+          "hasAudio": true
+        },
+        {
+          "id": "035",
+          "text": "Our staff member, Serene, who is holding the conference poster, will accompany the speakers to the restaurant.",
+          "hasAudio": true
+        },
+        {
+          "id": "036",
+          "text": "Session three will start at two p.m. after lunch.",
+          "hasAudio": true
+        },
+        {
+          "id": "037",
+          "text": "Thank you, everyone.",
+          "hasAudio": true
+        }
+      ],
+      "logistics": [
+        {
+          "dutyNo": "20",
+          "assignedTo": "S",
+          "duty": "hold a \"?\" card, accompany speakers to Bijas, the restaurant for lunch (1:40 pm)",
+          "materialsNeeded": "1. \"?\" card",
+          "notes": ""
+        },
+        {
+          "dutyNo": "21",
+          "assignedTo": "S",
+          "duty": "Be at Bijas at 1:40 pm to accompany the speakers back to ACR",
+          "materialsNeeded": "",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "12:25",
+        "endTime": "14:00",
+        "active": true
+      }
+    },
+    {
+      "id": "afternoon-break-logistics",
+      "title": "Afternoon Break Logistics",
+      "kind": "logistics",
+      "navLabel": "Afternoon Break",
+      "timeLabel": "15:15 - 15:25",
+      "sessionTitle": "Tea break support",
+      "trigger": "Use this as an operations checkpoint during the afternoon intermission.",
+      "whoOnStage": [
+        "Support team"
+      ],
+      "nextAction": "Refresh food and drink setup before Session 4 resumes.",
+      "notes": [
+        "The extracted workbook says fruit tarts, coffee, tea, cutlery, and tissue are handled in the afternoon break."
+      ],
+      "scriptCoverage": "Workbook logistics only",
+      "lineIds": [],
+      "lines": [],
+      "logistics": [
+        {
+          "dutyNo": "11",
+          "assignedTo": "J",
+          "duty": "Signing in and giving lanyards and onsite registration",
+          "materialsNeeded": "1. sign-in sheet for registrants; 2. sign-in sheet for law RPg students; 3. registration form for onsite participants 4. lanyards (orange for speakers; green for participants including Julie Chen and WYNG representatives; black for temp registrants; red for suppor team) 5. laptop for checkinng emails and watching on Zoom 6. programme booklet to be provided if needed",
+          "notes": ""
+        },
+        {
+          "dutyNo": "18",
+          "assignedTo": "Y",
+          "duty": "In the morning break, (a) pick up 2 boxes of salad wraps and 2 pots of Coffee and 1 pot of tea at Alfafa and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "materialsNeeded": "1. receipts 2. paper notices each showing description of the food or drink",
+          "notes": ""
+        },
+        {
+          "dutyNo": "19",
+          "assignedTo": "J",
+          "duty": "In the afternoon break, (b) pick up 2 boxes of fruit tarts and 2 pots of Coffee and 1 pot of tea at Alfafa and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "materialsNeeded": "1. receipts 2. paper notices each showing description of the food or drink",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "15:15",
+        "endTime": "15:25",
+        "active": true
+      }
+    },
+    {
+      "id": "session-four-close",
+      "title": "Session 4 Close, Souvenirs, and Final Photos",
+      "kind": "spoken",
+      "navLabel": "Session 4 Close",
+      "timeLabel": "16:05 - 16:15 and 16:15 – 17:00",
+      "sessionTitle": "Session 4: Medically Assisted Dying: Comparative Insights, Potentials, and Local Challenges",
+      "trigger": "Use this block after the final discussion and roundtable conclude.",
+      "whoOnStage": [
+        "Professor Carl Hildebrand",
+        "Professor Julie Chen",
+        "Session 3 and Session 4 presenters as invited"
+      ],
+      "nextAction": "Finish souvenir presentations, take the closing group photos, and formally end the symposium.",
+      "notes": [
+        "The normalized audio groups Sessions 3 and 4 souvenir presentation into the final closing block.",
+        "The workbook wording mentions Session 3 and after Dr Siraj; the current MC script instead presents Sessions 3 and 4 together at the end."
+      ],
+      "scriptCoverage": "Covered by practice audio",
+      "lineIds": [
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043",
+        "044",
+        "045",
+        "046",
+        "047",
+        "048",
+        "049",
+        "050",
+        "051"
+      ],
+      "lines": [
+        {
+          "id": "038",
+          "text": "Thank you so much for the enlightening discussion.",
+          "hasAudio": true
+        },
+        {
+          "id": "039",
+          "text": "May I invite Professor Carl Hildebrand and Professor Julie Chen, director of the Medical Ethics and Humanities Unit of the University of Hong Kong, one of the supporting organizations of this symposium, to jointly present a souvenir to the presenters of sessions three and four, one by one.",
+          "hasAudio": true
+        },
+        {
+          "id": "040",
+          "text": "May I invite Professor Emmanuel Cheung to come to the stage?",
+          "hasAudio": true
+        },
+        {
+          "id": "041",
+          "text": "Professor Emmanuel Cheung, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "042",
+          "text": "May I invite Dr. Sanwar Siraj to come to the stage?",
+          "hasAudio": true
+        },
+        {
+          "id": "043",
+          "text": "Dr. Sanwar Siraj, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "044",
+          "text": "May I invite Professor Chris Gastmans to come to the stage?",
+          "hasAudio": true
+        },
+        {
+          "id": "045",
+          "text": "Professor Chris Gastmans, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "046",
+          "text": "Professor Ben White, please come to the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "047",
+          "text": "Professor Ben White, Professor Gilberto Leung, and Professor Julie Chen, please stay behind for a group photo to be taken later on.",
+          "hasAudio": true
+        },
+        {
+          "id": "048",
+          "text": "To the photographer: please take a group photo for everyone on the stage.",
+          "hasAudio": true
+        },
+        {
+          "id": "049",
+          "text": "Please may I invite the speakers of the sessions in the morning, Professor Gilberto Leung, Professor Eric Ip, and Professor Carl Hildebrand, to come to the stage for a group photo of all speakers and chairs?",
+          "hasAudio": true
+        },
+        {
+          "id": "050",
+          "text": "Thank you very much.",
+          "hasAudio": true
+        },
+        {
+          "id": "051",
+          "text": "Please return to your seats.",
+          "hasAudio": true
+        }
+      ],
+      "logistics": [
+        {
+          "dutyNo": "2",
+          "assignedTo": "Y",
+          "duty": "Meet speaker at 8:00 am on 1/F of Hotel Jen and walk with them to MTR Exit B2 and then through the station to MTR Exit C2 to ACR and Whatsapp J about the siutation",
+          "materialsNeeded": "1. List of non-local speakers 2. Programme booklet, which contains photos 3. a card to be held at the Hotel?",
+          "notes": "Emergency plan: S will take care of the venue and J will go to the hotel too"
+        },
+        {
+          "dutyNo": "25",
+          "assignedTo": "SI",
+          "duty": "Be the MC, in particular, invite each chair to present a set of metal bookmarks to each speaker at thend of session 1, 2 and 3 and after presentation of Dr Siraj",
+          "materialsNeeded": "",
+          "notes": ""
+        },
+        {
+          "dutyNo": "26",
+          "assignedTo": "Y",
+          "duty": "Give souvenir to chair for presentation to each of the eleven speakers",
+          "materialsNeeded": "1. 11 sets of metal bookmarks plus one spare set?",
+          "notes": ""
+        },
+        {
+          "dutyNo": "27",
+          "assignedTo": "S",
+          "duty": "Taking 1 photo for presentation of each souvenir and group photos for each session and for the whole conference and taking photos throughout the symposium",
+          "materialsNeeded": "1. phone for taking photos",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "16:05",
+        "endTime": "17:00",
+        "active": true
+      }
+    },
+    {
+      "id": "dinner-transition",
+      "title": "Dinner Transition",
+      "kind": "spoken",
+      "navLabel": "Dinner",
+      "timeLabel": "After session 4 ends",
+      "sessionTitle": "Dinner (invitees only)",
+      "trigger": "Immediately after the symposium is formally closed.",
+      "whoOnStage": [
+        "MC",
+        "Speakers preparing to leave"
+      ],
+      "nextAction": "Send speakers to SCR at K. K. Leung Building with Serene leading the group.",
+      "notes": [
+        "The workbook says Serene accompanies speakers to SCR for dinner."
+      ],
+      "scriptCoverage": "Covered by practice audio",
+      "lineIds": [
+        "052",
+        "053",
+        "054",
+        "055"
+      ],
+      "lines": [
+        {
+          "id": "052",
+          "text": "This is the end of the symposium.",
+          "hasAudio": true
+        },
+        {
+          "id": "053",
+          "text": "It is time for dinner.",
+          "hasAudio": true
+        },
+        {
+          "id": "054",
+          "text": "Our staff member, Serene, who is holding the conference poster, will accompany the speakers to the restaurant, which is in K. K. Leung Building at the University of Hong Kong.",
+          "hasAudio": true
+        },
+        {
+          "id": "055",
+          "text": "Thank you, everyone.",
+          "hasAudio": true
+        }
+      ],
+      "logistics": [
+        {
+          "dutyNo": "18",
+          "assignedTo": "Y",
+          "duty": "In the morning break, (a) pick up 2 boxes of salad wraps and 2 pots of Coffee and 1 pot of tea at Alfafa and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "materialsNeeded": "1. receipts 2. paper notices each showing description of the food or drink",
+          "notes": ""
+        },
+        {
+          "dutyNo": "19",
+          "assignedTo": "J",
+          "duty": "In the afternoon break, (b) pick up 2 boxes of fruit tarts and 2 pots of Coffee and 1 pot of tea at Alfafa and put them on the table (*two queues for food and drinks) and (b) put cutlery and tissue on table",
+          "materialsNeeded": "1. receipts 2. paper notices each showing description of the food or drink",
+          "notes": ""
+        },
+        {
+          "dutyNo": "22",
+          "assignedTo": "S",
+          "duty": "hold a \"?\" card, accompany speakers to SCR, the restaurant for dinner",
+          "materialsNeeded": "1. \"?\" card",
+          "notes": ""
+        }
+      ],
+      "schedule": {
+        "startTime": "17:00",
+        "endTime": "18:30",
+        "active": true
+      }
+    },
+    {
+      "id": "pronunciation-drills",
+      "title": "Pronunciation and Time Drills",
+      "kind": "practice",
+      "navLabel": "Drills",
+      "timeLabel": "Practice anytime",
+      "sessionTitle": "Reference drills",
+      "trigger": "Use these lines as rehearsal support, not as live symposium cues.",
+      "whoOnStage": [
+        "MC practicing alone"
+      ],
+      "nextAction": "Repeat until the time expressions sound natural.",
+      "notes": [
+        "These lines are included only for pronunciation practice."
+      ],
+      "scriptCoverage": "Practice only",
+      "lineIds": [
+        "056",
+        "057",
+        "058",
+        "059"
+      ],
+      "lines": [
+        {
+          "id": "056",
+          "text": "Nine a.m. to nine fifteen a.m.",
+          "hasAudio": true
+        },
+        {
+          "id": "057",
+          "text": "Nine oh five a.m.",
+          "hasAudio": true
+        },
+        {
+          "id": "058",
+          "text": "Twelve twenty-five p.m.",
+          "hasAudio": true
+        },
+        {
+          "id": "059",
+          "text": "Two p.m.",
+          "hasAudio": true
+        }
+      ],
+      "logistics": [],
+      "schedule": {
+        "startTime": null,
+        "endTime": null,
+        "active": false
+      }
+    }
+  ]
+}

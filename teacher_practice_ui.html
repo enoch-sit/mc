@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teacher Practice Audio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe7;
+      --panel: rgba(255, 252, 246, 0.92);
+      --card: #fffdf8;
+      --text: #1e2932;
+      --muted: #5f6978;
+      --accent: #2d5b6e;
+      --accent-soft: #d5e6ee;
+      --border: #dfd5c8;
+      --shadow: 0 18px 42px rgba(49, 62, 71, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(91, 141, 163, 0.18), transparent 28%),
+        linear-gradient(180deg, #fbf7f2 0%, var(--bg) 100%);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 48px;
+    }
+
+    .hero, .panel, .line-card {
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 28px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(45, 91, 110, 0.95), rgba(34, 55, 71, 0.94));
+      color: #f7fbfd;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.06;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 780px;
+      line-height: 1.55;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .hero-links a {
+      color: #f7fbfd;
+      text-decoration: none;
+      border: 1px solid rgba(247, 251, 253, 0.28);
+      border-radius: 999px;
+      padding: 10px 14px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 18px;
+      margin-top: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      position: sticky;
+      top: 18px;
+    }
+
+    .panel h2, .content h2 {
+      margin: 0 0 12px;
+      font-size: 1.18rem;
+    }
+
+    .panel p, .panel li, .line-text, .line-note, .status {
+      line-height: 1.55;
+    }
+
+    .panel ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .content {
+      display: grid;
+      gap: 16px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .section-actions, .provider-actions, .line-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 14px;
+      background: var(--accent);
+      color: white;
+      cursor: pointer;
+      font: inherit;
+      transition: transform 120ms ease, opacity 120ms ease;
+    }
+
+    button.secondary {
+      background: var(--accent-soft);
+      color: #234454;
+    }
+
+    button.ghost {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid rgba(45, 91, 110, 0.25);
+    }
+
+    button:hover { transform: translateY(-1px); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+    .status {
+      min-height: 1.5em;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .line-list { display: grid; gap: 12px; }
+
+    .line-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .line-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .line-id {
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .line-text { margin: 0; }
+    .line-note { margin: 8px 0 0; color: var(--muted); font-size: 0.95rem; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .pill { background: #e9f1f4; color: #234454; border-radius: 999px; padding: 6px 10px; font-size: 0.9rem; }
+
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .panel { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Teacher-Style Opening Practice</h1>
+      <p>This page plays the opening section as a guided lesson. Each clip uses a slower coaching pattern: listen, breathe, repeat, and try once more. Both OpenRouter and xAI Grok versions are available for direct comparison.</p>
+      <div class="pill-row">
+        <span class="pill">Guided coaching</span>
+        <span class="pill">Opening section only</span>
+        <span class="pill">OpenRouter and Grok</span>
+      </div>
+      <div class="hero-links">
+        <a href="mc_practice_ui.html">Back to Main Practice Page</a>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside class="panel">
+        <h2>How To Practice</h2>
+        <ul>
+          <li>Pick one provider first and keep it consistent for a few lines.</li>
+          <li>Listen to the teacher clip fully before repeating.</li>
+          <li>Use the line text as your cue, not as a script to rush through.</li>
+          <li>If a line feels hard, play it two or three times before moving on.</li>
+        </ul>
+        <h2 style="margin-top:18px;">Playback</h2>
+        <div class="provider-actions">
+          <button id="stopAllButton" class="secondary" type="button">Stop Current Audio</button>
+          <button id="toggleNotesButton" class="ghost" type="button">Hide Notes</button>
+        </div>
+        <p class="status" id="statusText">Ready.</p>
+      </aside>
+
+      <section class="content">
+        <section class="section">
+          <div class="section-header">
+            <div>
+              <h2>Opening Section</h2>
+              <p>Lines 001 to 012 from your MC opening, now generated in a slower teacher style.</p>
+            </div>
+            <div class="section-actions">
+              <button type="button" id="playOpenrouterPartButton">Play Opening with OpenRouter</button>
+              <button type="button" id="playGrokPartButton">Play Opening with Grok</button>
+              <button type="button" class="secondary" id="stopPartButton">Stop</button>
+            </div>
+          </div>
+          <div class="line-list" id="lineList"></div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const lines = [
+      ["001", "Good morning."],
+      ["002", "Dr. Anthony Ng, trustee of the Wing Foundation, and advisory board member of the Centre for Medical Ethics and Law of the University of Hong Kong.", "WYNG is spoken as Wing."],
+      ["003", "Ms. Glenda Yu, C E O of the Wing Foundation.", "CEO is read letter by letter."],
+      ["004", "Distinguished guests, ladies and gentlemen."],
+      ["005", "Welcome to the International Symposium on Medically Assisted Dying: Global Trends and Asian Perspectives, organized by the Centre for Medical Ethics and Law of the University of Hong Kong."],
+      ["006", "The acronym for the Centre for Medical Ethics and Law is C, M, E, L.", "Read each letter separately."],
+      ["007", "So we also call the centre see-mel.", "This is not letter by letter."],
+      ["008", "C-mel is a joint centre that focuses on health law and health ethics."],
+      ["009", "It is a centre established by two faculties: the L, K, S Faculty of Medicine, and the Faculty of Law.", "LKS is read letter by letter."],
+      ["010", "Thank you for joining us today."],
+      ["011", "May I invite Professor Gilberto Leung, co-director of the Centre for Medical Ethics and Law, to give a welcome speech and introduction."],
+      ["012", "Professor Leung, please."]
+    ];
+
+    const providers = {
+      openrouter: {
+        label: "OpenRouter",
+        basePath: "teacher_tts_audio/openrouter"
+      },
+      grok: {
+        label: "Grok",
+        basePath: "teacher_tts_audio/grok"
+      }
+    };
+
+    const lineList = document.getElementById("lineList");
+    const statusText = document.getElementById("statusText");
+    const stopAllButton = document.getElementById("stopAllButton");
+    const toggleNotesButton = document.getElementById("toggleNotesButton");
+    const playOpenrouterPartButton = document.getElementById("playOpenrouterPartButton");
+    const playGrokPartButton = document.getElementById("playGrokPartButton");
+    const stopPartButton = document.getElementById("stopPartButton");
+
+    let activeAudio = null;
+    let playbackToken = 0;
+    let notesVisible = true;
+
+    function setStatus(message) {
+      statusText.textContent = message;
+    }
+
+    function stopCurrentAudio() {
+      playbackToken += 1;
+      if (activeAudio) {
+        activeAudio.pause();
+        activeAudio.currentTime = 0;
+      }
+      activeAudio = null;
+      setStatus("Stopped.");
+    }
+
+    async function playAudio(src, description) {
+      if (activeAudio) {
+        activeAudio.pause();
+        activeAudio.currentTime = 0;
+      }
+
+      const audio = new Audio(src);
+      activeAudio = audio;
+      setStatus(`Playing: ${description}`);
+
+      try {
+        await audio.play();
+      } catch (error) {
+        setStatus(`Could not play ${description}. Make sure the teacher clips were generated first.`);
+        throw error;
+      }
+
+      return new Promise((resolve) => {
+        audio.addEventListener("ended", () => {
+          if (activeAudio === audio) {
+            activeAudio = null;
+            setStatus(`Finished: ${description}`);
+          }
+          resolve();
+        }, { once: true });
+      });
+    }
+
+    async function playSection(providerKey) {
+      stopCurrentAudio();
+      const token = playbackToken;
+      const provider = providers[providerKey];
+      setStatus(`Playing opening with ${provider.label}`);
+
+      for (const [id, text] of lines) {
+        if (token !== playbackToken) {
+          return;
+        }
+        await playAudio(`${provider.basePath}/${id}.mp3`, `${provider.label} ${id} ${text}`);
+      }
+
+      if (token === playbackToken) {
+        setStatus(`Finished opening with ${provider.label}`);
+      }
+    }
+
+    function renderLine([id, text, note]) {
+      const card = document.createElement("article");
+      card.className = "line-card";
+
+      const head = document.createElement("div");
+      head.className = "line-head";
+
+      const idNode = document.createElement("div");
+      idNode.className = "line-id";
+      idNode.textContent = `Line ${id}`;
+
+      const actions = document.createElement("div");
+      actions.className = "line-actions";
+
+      for (const [providerKey, provider] of Object.entries(providers)) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = providerKey === "grok" ? "secondary" : "";
+        button.textContent = `Play ${provider.label}`;
+        button.addEventListener("click", () => {
+          playbackToken += 1;
+          playAudio(`${provider.basePath}/${id}.mp3`, `${provider.label} ${id} ${text}`).catch(() => {});
+        });
+        actions.append(button);
+      }
+
+      head.append(idNode, actions);
+
+      const textNode = document.createElement("p");
+      textNode.className = "line-text";
+      textNode.textContent = text;
+      card.append(head, textNode);
+
+      if (note) {
+        const noteNode = document.createElement("p");
+        noteNode.className = "line-note";
+        noteNode.textContent = `Note: ${note}`;
+        card.append(noteNode);
+      }
+
+      return card;
+    }
+
+    for (const line of lines) {
+      lineList.append(renderLine(line));
+    }
+
+    stopAllButton.addEventListener("click", stopCurrentAudio);
+    stopPartButton.addEventListener("click", stopCurrentAudio);
+    playOpenrouterPartButton.addEventListener("click", () => { playSection("openrouter").catch(() => {}); });
+    playGrokPartButton.addEventListener("click", () => { playSection("grok").catch(() => {}); });
+    toggleNotesButton.addEventListener("click", () => {
+      notesVisible = !notesVisible;
+      for (const noteNode of document.querySelectorAll('.line-note')) {
+        noteNode.style.display = notesVisible ? "block" : "none";
+      }
+      toggleNotesButton.textContent = notesVisible ? "Hide Notes" : "Show Notes";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+file 'C:/Users/thank/Documents/thankGodForJesusChrist/thankGodForWork/Satwork/mc_practice_audio/056.wav'
+file 'C:/Users/thank/Documents/thankGodForJesusChrist/thankGodForWork/Satwork/mc_practice_audio/057.wav'
+file 'C:/Users/thank/Documents/thankGodForJesusChrist/thankGodForWork/Satwork/mc_practice_audio/058.wav'
+file 'C:/Users/thank/Documents/thankGodForJesusChrist/thankGodForWork/Satwork/mc_practice_audio/059.wav'
