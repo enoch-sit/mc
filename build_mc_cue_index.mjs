@@ -149,6 +149,65 @@ function withSchedule(phase, startTime, endTime) {
   };
 }
 
+const PERSON_NAME_PATTERN = /\b(?:Professor|Prof\.?|Dr\.?|Ms\.?|Mr\.?|Mrs\.?)\s+[A-Z][A-Za-z.'-]*(?:\s+[A-Z][A-Za-z.'-]*){0,4}/g;
+const TITLE_PREFIX_PATTERN = /^(Professor|Prof\.?|Dr\.?|Ms\.?|Mr\.?|Mrs\.?)\s+/;
+
+function slugifyName(value) {
+  return normalizeWhitespace(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function addNameEntry(entries, displayName) {
+  const normalizedName = normalizeWhitespace(displayName).replace(/[,:;!?]+$/g, "");
+  if (!normalizedName) {
+    return;
+  }
+
+  const id = slugifyName(normalizedName);
+  if (!id || entries.has(id)) {
+    return;
+  }
+
+  entries.set(id, {
+    id,
+    displayName: normalizedName,
+    spokenText: normalizedName,
+  });
+}
+
+function collectNamesFromText(entries, text) {
+  const matches = normalizeWhitespace(text).match(PERSON_NAME_PATTERN) || [];
+  matches.forEach((match) => {
+    addNameEntry(entries, match);
+
+    const withoutTitle = match.replace(TITLE_PREFIX_PATTERN, "").trim();
+    if (withoutTitle.split(/\s+/).length >= 2) {
+      addNameEntry(entries, withoutTitle);
+    }
+  });
+}
+
+function buildNamePronunciations(phases) {
+  const entries = new Map();
+
+  phases.forEach((phase) => {
+    [phase.title, phase.trigger, phase.nextAction, phase.sessionTitle, phase.timeLabel, phase.scriptCoverage]
+      .forEach((text) => collectNamesFromText(entries, text));
+
+    phase.whoOnStage.forEach((item) => collectNamesFromText(entries, item));
+    phase.notes.forEach((note) => collectNamesFromText(entries, note));
+    phase.lines.forEach((line) => collectNamesFromText(entries, line.text));
+    phase.logistics.forEach((duty) => {
+      [duty.assignedTo, duty.duty, duty.materialsNeeded, duty.notes]
+        .forEach((text) => collectNamesFromText(entries, text));
+    });
+  });
+
+  return Array.from(entries.values()).sort((left, right) => left.displayName.localeCompare(right.displayName));
+}
+
 function buildPhases(programme, duties, practiceLines, scriptLines) {
   const welcomeEvent = findProgrammeEvent(
     programme,
@@ -365,6 +424,7 @@ async function main() {
   const practiceLines = parsePracticeLines(practiceRaw);
   const scriptLines = parseMcScript(mcScriptRaw);
   const phases = buildPhases(programme, duties, practiceLines, scriptLines);
+  const namePronunciations = buildNamePronunciations(phases);
 
   const payload = {
     generatedAt: new Date().toISOString(),
@@ -389,6 +449,7 @@ async function main() {
       openrouter: "../teacher_tts_audio/openrouter",
       grok: "../teacher_tts_audio/grok",
     },
+    namePronunciations,
     phases,
   };
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T23:12:01.746Z",
+  "generatedAt": "2026-05-22T15:13:31.076Z",
   "sourceFiles": [
     "AD-Symposium-Programme-g_extract/programme_schedule.csv",
     "2026 Symposium List (version 3)_extract/duties_records.csv",
@@ -21,6 +21,183 @@
     "openrouter": "../teacher_tts_audio/openrouter",
     "grok": "../teacher_tts_audio/grok"
   },
+  "namePronunciations": [
+    {
+      "id": "ana-iltis",
+      "displayName": "Ana Iltis",
+      "spokenText": "Ana Iltis"
+    },
+    {
+      "id": "anthony-ng",
+      "displayName": "Anthony Ng",
+      "spokenText": "Anthony Ng"
+    },
+    {
+      "id": "ben-white",
+      "displayName": "Ben White",
+      "spokenText": "Ben White"
+    },
+    {
+      "id": "carl-hildebrand",
+      "displayName": "Carl Hildebrand",
+      "spokenText": "Carl Hildebrand"
+    },
+    {
+      "id": "chris-gastmans",
+      "displayName": "Chris Gastmans",
+      "spokenText": "Chris Gastmans"
+    },
+    {
+      "id": "dr-siraj",
+      "displayName": "Dr Siraj",
+      "spokenText": "Dr Siraj"
+    },
+    {
+      "id": "dr-anthony-ng",
+      "displayName": "Dr. Anthony Ng",
+      "spokenText": "Dr. Anthony Ng"
+    },
+    {
+      "id": "dr-sanwar-siraj",
+      "displayName": "Dr. Sanwar Siraj",
+      "spokenText": "Dr. Sanwar Siraj"
+    },
+    {
+      "id": "dr-simon-walker",
+      "displayName": "Dr. Simon Walker",
+      "spokenText": "Dr. Simon Walker"
+    },
+    {
+      "id": "ellen-y-zhang",
+      "displayName": "Ellen Y. Zhang",
+      "spokenText": "Ellen Y. Zhang"
+    },
+    {
+      "id": "emmanuel-cheung",
+      "displayName": "Emmanuel Cheung",
+      "spokenText": "Emmanuel Cheung"
+    },
+    {
+      "id": "eric-ip",
+      "displayName": "Eric Ip",
+      "spokenText": "Eric Ip"
+    },
+    {
+      "id": "gilberto-leung",
+      "displayName": "Gilberto Leung",
+      "spokenText": "Gilberto Leung"
+    },
+    {
+      "id": "glenda-yu",
+      "displayName": "Glenda Yu",
+      "spokenText": "Glenda Yu"
+    },
+    {
+      "id": "jue-wang",
+      "displayName": "Jue Wang",
+      "spokenText": "Jue Wang"
+    },
+    {
+      "id": "julie-chen",
+      "displayName": "Julie Chen",
+      "spokenText": "Julie Chen"
+    },
+    {
+      "id": "mark-j-cherry",
+      "displayName": "Mark J. Cherry",
+      "spokenText": "Mark J. Cherry"
+    },
+    {
+      "id": "ms-glenda-yu",
+      "displayName": "Ms. Glenda Yu",
+      "spokenText": "Ms. Glenda Yu"
+    },
+    {
+      "id": "prof-eric-ip",
+      "displayName": "Prof Eric Ip",
+      "spokenText": "Prof Eric Ip"
+    },
+    {
+      "id": "professor-ana-iltis",
+      "displayName": "Professor Ana Iltis",
+      "spokenText": "Professor Ana Iltis"
+    },
+    {
+      "id": "professor-ben-white",
+      "displayName": "Professor Ben White",
+      "spokenText": "Professor Ben White"
+    },
+    {
+      "id": "professor-carl-hildebrand",
+      "displayName": "Professor Carl Hildebrand",
+      "spokenText": "Professor Carl Hildebrand"
+    },
+    {
+      "id": "professor-chris-gastmans",
+      "displayName": "Professor Chris Gastmans",
+      "spokenText": "Professor Chris Gastmans"
+    },
+    {
+      "id": "professor-ellen-y-zhang",
+      "displayName": "Professor Ellen Y. Zhang",
+      "spokenText": "Professor Ellen Y. Zhang"
+    },
+    {
+      "id": "professor-emmanuel-cheung",
+      "displayName": "Professor Emmanuel Cheung",
+      "spokenText": "Professor Emmanuel Cheung"
+    },
+    {
+      "id": "professor-eric-ip",
+      "displayName": "Professor Eric Ip",
+      "spokenText": "Professor Eric Ip"
+    },
+    {
+      "id": "professor-gilberto-leung",
+      "displayName": "Professor Gilberto Leung",
+      "spokenText": "Professor Gilberto Leung"
+    },
+    {
+      "id": "professor-jue-wang",
+      "displayName": "Professor Jue Wang",
+      "spokenText": "Professor Jue Wang"
+    },
+    {
+      "id": "professor-julie-chen",
+      "displayName": "Professor Julie Chen",
+      "spokenText": "Professor Julie Chen"
+    },
+    {
+      "id": "professor-leung",
+      "displayName": "Professor Leung",
+      "spokenText": "Professor Leung"
+    },
+    {
+      "id": "professor-mark-j-cherry",
+      "displayName": "Professor Mark J. Cherry",
+      "spokenText": "Professor Mark J. Cherry"
+    },
+    {
+      "id": "professor-ruiping-fan",
+      "displayName": "Professor Ruiping Fan",
+      "spokenText": "Professor Ruiping Fan"
+    },
+    {
+      "id": "ruiping-fan",
+      "displayName": "Ruiping Fan",
+      "spokenText": "Ruiping Fan"
+    },
+    {
+      "id": "sanwar-siraj",
+      "displayName": "Sanwar Siraj",
+      "spokenText": "Sanwar Siraj"
+    },
+    {
+      "id": "simon-walker",
+      "displayName": "Simon Walker",
+      "spokenText": "Simon Walker"
+    }
+  ],
   "phases": [
     {
       "id": "pre-event-logistics",
